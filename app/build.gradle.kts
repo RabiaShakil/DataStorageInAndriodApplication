@@ -40,7 +40,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = "1.5.0"
     }
     packaging {
         resources {
@@ -52,6 +52,9 @@ android {
 dependencies {
 
     implementation("androidx.core:core-ktx:1.9.0")
+    implementation ("androidx.compose.material3:material3:1.1.2")
+    implementation ("androidx.compose.material3:material3-window-size-class:1.1.2")
+
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.activity:activity-compose:1.8.0")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
@@ -67,13 +70,17 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
+    //Dagger - Hilt
+    implementation("com.google.dagger:hilt-android:2.48")
+    //ksp("com.google.dagger:hilt-compiler:2.48")
 
-        implementation ("androidx.activity:activity-compose:1.3.0-alpha08")
+    // Room
+    implementation("androidx.room:room-runtime:2.5.2")
+    implementation("androidx.room:room-ktx:2.5.2")
+   // ksp("androidx.room:room-compiler:2.5.2")
 
-        implementation ("androidx.room:room-runtime:2.4.0-alpha04")
-        implementation ("androidx.room:room-ktx:2.4.0-alpha04")
-        implementation ("io.reactivex.rxjava3:rxjava:3.1.2")
-        implementation ("io.reactivex.rxjava3:rxandroid:3.0.0")
+
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
 
     implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0-beta01")
     implementation ("androidx.compose.runtime:runtime-livedata:1.6.0-alpha08")
