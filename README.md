@@ -7,9 +7,9 @@ messages, and upload images from the gallery for a particular contact from withi
 Your task is to develop this Android application.
 Requirements:
 1. *Request Data from Another App (Contacts):*
-   *Implement functionality to request data (contact information) from the
+   * Implement functionality to request data (contact information) from the
    device(built-in contacts app using a Content Resolver).
-   *Users should be able to select specific contacts or import all contacts into your app.
+   * Users should be able to select specific contacts or import all contacts into your app.
 2. *Store Data in a Local Database:*
    * Use a suitable library (e.g., SQLite, Room, or any other library of your choice)
    to create a local database within your application.
